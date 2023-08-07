@@ -47,10 +47,6 @@ def read_data():
             Data[cols[i]] = m
     shape = Data.shape[0]
     trainData = Data.values
-
-    if shape > 1000:
-        element = np.random.choice(shape, 1000, replace=False)
-        trainData = trainData[element]
     return trainData
 
 
